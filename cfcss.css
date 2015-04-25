@@ -314,9 +314,9 @@ footer a{
 	float: right;
 	width: 0; 
 	height: 0; 
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
-	border-bottom: 12px solid white;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
 	border-top: 0;
 	-webkit-transition: border .8s;
 	-moz-transition: border .8s;
@@ -327,10 +327,10 @@ footer a{
 	float: right;
 	width: 0; 
 	height: 0; 
-	border-left: 12px solid transparent;
-	border-right: 12px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
 	border-bottom: 0px;
-	border-top: 12px solid white;
+	border-top: 10px solid white;
 }
 
 
