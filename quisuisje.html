@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="cfcss.css" />
 	<title>Des mots à la plume. Ecrire sa vie, ses mémoires.</title>
 	<link rel="shortcut icon" href="ressources/plume11.png" type="image/x-icon" />
+	<script src="jquery.js"></script>
 </head>
 
 <body>
@@ -22,43 +23,44 @@
 				<a href="tarifs.html">Tarifs</a>
 			</nav>
 			<section class="quisuisje bio">
-				
-				<h1>Extrait de « Ma » biographie</h1>
-
-				<p><img class="photogauche" src="ressources/004ng.jpg" alt="photo de famille" title="Mes parents. Ma soeur et 4 autres de mes frères"/>
-				Quatrième d’une fratrie de six enfants, père et mère agriculteurs,
-				j’ai vécu une enfance heureuse mais difficile...<br/>
-				Peu de contacts avec l’extérieur, la ferme se trouvait un peu à l’écart
-				du bourg de Sorges, situé à une vingtaine de kilomètres au nord de Périgueux,
-				capitale du Périgord.</br>
-				« Heureuse, mais difficile ». Je retiens les mots de mon père, arrivé presque
-				au terme de sa vie : « On vous a privés de beaucoup de choses, mais nous vous
-				avons aimés tous autant, sans aucune distinction ».<br/>
-				Je n’ai pas souvent vu rire mon père, la pénibilité des travaux de la ferme,
-				le métier tributaire des aléas climatiques, les horaires à n’en plus finir,
-				rire de quoi dans ces conditions ?
-				<img class="photodroite" src="ressources/005.jpg" alt="Ma soeur, mon petit frère et moi" title="Ma soeur, mon petit frère et moi"/><br/>
-				Les vacances ? Nous n’en avions pas... En tous cas, pas tous ensemble.
-				Parfois, tous entassés dans la 404 familiale, qui sentait à plein nez l’odeur
-				du tabac froid des Gauloises que fumait mon père, nous allions déjeuner
-				chez mes grand-parents maternels. C’était souvent au moment des fêtes
-				religieuses, Noël, Rameaux ou Pâques.<br/>
-				Aussi, au moment des grandes vacances d’été, nous allions par paires
-				chez ces mêmes grand-parents passer une partie de nos vacances.
-				Là-bas... Le Breuil, c’était un peu le paradis...<br/></p>
-				
-				<p>... Aujourd’hui, j’ai passé la cinquantaine, mariée en secondes noces
-				avec un homme respectable, originaire de la Mayenne.<br/>
-				J’ai élevé mes trois enfants et ma fille aînée m’a permis
-				d’obtenir cette année le titre honorifique de « Mamie ».
-				Que la vie est belle !<br/>
-				Nous vivons sur Pellouailles-Les-Vignes, petit bourg
-				dans le Maine-et-Loire, tout près d’Angers.<br/></p>
-				
-				<p>J’ai toujours aimé lire (récits autobiographiques notamment),
-				dessiner également, passionnément...<br/></p>
-				
-				<p>Et aujourd’hui, je suis heureuse d’aller à votre rencontre...</p>
+				<div class="show">
+					<h1>Extrait de « Ma » biographie<span class="fleche"></span></h1>
+	
+					<p><img class="photogauche" src="ressources/004ng.jpg" alt="photo de famille" title="Mes parents. Ma soeur et 4 autres de mes frères"/>
+					Quatrième d’une fratrie de six enfants, père et mère agriculteurs,
+					j’ai vécu une enfance heureuse mais difficile...<br/>
+					Peu de contacts avec l’extérieur, la ferme se trouvait un peu à l’écart
+					du bourg de Sorges, situé à une vingtaine de kilomètres au nord de Périgueux,
+					capitale du Périgord.</br>
+					« Heureuse, mais difficile ». Je retiens les mots de mon père, arrivé presque
+					au terme de sa vie : « On vous a privés de beaucoup de choses, mais nous vous
+					avons aimés tous autant, sans aucune distinction ».<br/>
+					Je n’ai pas souvent vu rire mon père, la pénibilité des travaux de la ferme,
+					le métier tributaire des aléas climatiques, les horaires à n’en plus finir,
+					rire de quoi dans ces conditions ?
+					<img class="photodroite" src="ressources/005.jpg" alt="Ma soeur, mon petit frère et moi" title="Ma soeur, mon petit frère et moi"/><br/>
+					Les vacances ? Nous n’en avions pas... En tous cas, pas tous ensemble.
+					Parfois, tous entassés dans la 404 familiale, qui sentait à plein nez l’odeur
+					du tabac froid des Gauloises que fumait mon père, nous allions déjeuner
+					chez mes grand-parents maternels. C’était souvent au moment des fêtes
+					religieuses, Noël, Rameaux ou Pâques.<br/>
+					Aussi, au moment des grandes vacances d’été, nous allions par paires
+					chez ces mêmes grand-parents passer une partie de nos vacances.
+					Là-bas... Le Breuil, c’était un peu le paradis...<br/></p>
+					
+					<p>... Aujourd’hui, j’ai passé la cinquantaine, mariée en secondes noces
+					avec un homme respectable, originaire de la Mayenne.<br/>
+					J’ai élevé mes trois enfants et ma fille aînée m’a permis
+					d’obtenir cette année le titre honorifique de « Mamie ».
+					Que la vie est belle !<br/>
+					Nous vivons sur Pellouailles-Les-Vignes, petit bourg
+					dans le Maine-et-Loire, tout près d’Angers.<br/></p>
+					
+					<p>J’ai toujours aimé lire (récits autobiographiques notamment),
+					dessiner également, passionnément...<br/></p>
+					
+					<p>Et aujourd’hui, je suis heureuse d’aller à votre rencontre...</p>
+				</div>
 			</section>
 			<section class="pcenter">
 				<span class="h3co" id="contact"><h3>Mes coordonnées :</h3>
@@ -78,5 +80,10 @@
 			</footer>
 		</div>
 	</div>
+	<script>
+		$('.show').on('click', function () { 
+			 $(this).toggleClass('hide');
+		});
+	</script>
 </body>
 </html>
