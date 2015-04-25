@@ -4,25 +4,26 @@
 	<meta charset = "utf-8" />
 	<link rel="stylesheet" href="cfcss.css" />
 	<link rel="shortcut icon" href="ressources/plume11.png" type="image/x-icon">
+	<script src="jquery.js"></script>
 	<title>Des mots à la plume. Ecrire sa vie, ses mémoires.</title>
 </head>
 
 <body>
-	<div class="gradient">
-		<div class="page">
-			<header id="top">
-				<h1>Des Mots à la Plume</h1>
-				<h2>Ecrire sa vie, ses mémoires...</h2>
-			</header>
-			<nav>
-				<a href="index.html">Accueil</a>
-				<a href="quisuisje.html">Qui suis-je ?</a>
-				<a href="deroulement.html">Déroulement</a>
-				<a href="deontologie.html">Déontologie</a>
-				<a href="tarifs.html">Tarifs</a>
-			</nav>
-			<section class="tarifs">
-				<h1>Tarifs d’une biographie</h1>
+	<div class="page">
+		<header id="top">
+			<h1>Des Mots à la Plume</h1>
+			<h2>Ecrire sa vie, ses mémoires...</h2>
+		</header>
+		<nav>
+			<a href="index.html">Accueil</a>
+			<a href="quisuisje.html">Qui suis-je ?</a>
+			<a href="deroulement.html">Déroulement</a>
+			<a href="deontologie.html">Déontologie</a>
+			<a href="tarifs.html">Tarifs</a>
+		</nav>
+		<section class="tarifs">
+			<div class="show">
+				<h1>Tarifs d’une biographie<span class="fleche"></span></h1>
 
 				<p>Mon tarif est de 30 E (trente Euros) de l’heure.<br/>
 				Comme indiqué précédemment, mon travail est effectué à l’heure,
@@ -50,9 +51,10 @@
 				de bonne qualité, illustré par une dizaine de photos noir et couleur,
 				une couverture en couleur d’un papier plus épais, il faut compter environ
 				16 € par exemplaire.</i></p>
-
-
-				<h1>Devis d’une biographie</h1>
+			</div>
+			
+			<div class="show">
+				<h1>Devis d’une biographie<span class="fleche"></span></h1>
 
 				<p>Il m’est difficile par avance de vous établir un devis précis.
 				Cependant, si vous tenez à connaître le prix final, nous pouvons réaliser
@@ -78,15 +80,19 @@
 				ce magnifique projet qu’est le récit d’une vie.
 				Le livre des souvenirs d’un parent est un cadeau unique au monde
 				que l’on fait à ceux que l’on aime et à soi-même.</p>
-
-			</section>
-			<section>
-				<p class="pcenter"><a href="#top" title="Remonter au menu"><img src="ressources/plume11.png"/><span class="return">Retour au menu</span></a></p>
-			</section>
-			<footer>
-				<p><a href="ressources/Livret_biographe.pdf" target="_blank">Télécharger brochure</a> - <a href="quisuisje.html#contact">Contact</a></p>
-			</footer>
-		</div>
+			</div>
+		</section>
+		<section>
+			<p class="pcenter"><a href="#top" title="Remonter au menu"><img src="ressources/plume11.png"/><span class="return">Retour au menu</span></a></p>
+		</section>
+		<footer>
+			<p><a href="ressources/Livret_biographe.pdf" target="_blank">Télécharger brochure</a> - <a href="quisuisje.html#contact">Contact</a></p>
+		</footer>
 	</div>
+	<script>
+		$('.show').on('click', function () { 
+			 $(this).toggleClass('hide');
+		});
+	</script>
 </body>
 </html>
